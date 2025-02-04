@@ -11,7 +11,7 @@ client_config = {
     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
     "token_uri": "https://oauth2.googleapis.com/token",
     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-    "redirect_uris": ["http://localhost"],
+    "redirect_uris": ["https://exper-mocha.vercel.app/"],
     "revoke_uri": "https://oauth2.googleapis.com/revoke"
 }
 
@@ -39,4 +39,4 @@ def upload_file():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
